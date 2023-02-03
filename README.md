@@ -1,6 +1,6 @@
-# add-tsconfig
+# add-typescript
 
-> Adds my tsconfig to a project
+> Adds `typescript` and `tsconfig-one` to a project
 
 ## :sparkles: Features
 
