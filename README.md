@@ -4,7 +4,12 @@
 
 ## :sparkles: Features
 
- - Installs `typescript` and `ts-config-one`
- - Adds or replaces `tsconfig.json`
- - Adds a build script to `package.json`
- 
+- Installs `typescript` and `ts-config-one`
+- Adds or replaces `tsconfig.json`
+- Adds a build script to `package.json`
+
+## Usage
+
+```sh
+npx add-typescript@latest
+```
