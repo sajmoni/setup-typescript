@@ -6,7 +6,7 @@ import chalk from "chalk";
 import { readPackage } from "read-pkg";
 import sortPackageJson from "sort-package-json";
 import { writePackage } from "write-pkg";
-import tsConfig from "./tsConfigTemplate";
+import tsConfig from "./tsConfigTemplate.js";
 
 console.log();
 console.log(chalk.blue.bold(" add-typescript"));

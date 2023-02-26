@@ -1,9 +1,10 @@
 import path from "node:path";
-import { readFile } from "node:fs/promises";
 import { expect, test } from "vitest";
 import { execa } from "execa";
 import { temporaryDirectory } from "tempy";
+import { loadJsonFile } from "load-json-file";
 import { PackageJson, readPackage } from "read-pkg";
+
 import tsConfig from "./src/tsConfigTemplate";
 
 test("add-typescript", async () => {
@@ -17,7 +18,7 @@ test("add-typescript", async () => {
     },
   });
 
-  const generatedTsConfig = await readFile(
+  const generatedTsConfig = await loadJsonFile(
     path.join(directory, "tsconfig.json")
   );
 
@@ -31,8 +32,8 @@ test("add-typescript", async () => {
   };
 
   expect(Object.keys(packageJson.devDependencies)).toEqual([
+    "tsconfig-one",
     "typescript",
-    "ts-config-one",
   ]);
 
   console.log("stdout", stdout);
