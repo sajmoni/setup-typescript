@@ -1,15 +1,15 @@
 {
-  "name": "add-typescript",
+  "name": "setup-typescript",
   "version": "0.0.0",
   "description": "> Adds `typescript` and `tsconfig-one` to a project",
   "keywords": [],
-  "homepage": "https://github.com/sajmoni/add-typescript#readme",
+  "homepage": "https://github.com/sajmoni/setup-typescript#readme",
   "bugs": {
-    "url": "https://github.com/sajmoni/add-typescript/issues"
+    "url": "https://github.com/sajmoni/setup-typescript/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sajmoni/add-typescript.git"
+    "url": "git+https://github.com/sajmoni/setup-typescript.git"
   },
   "license": "MIT",
   "author": "sajmoni",
@@ -21,7 +21,7 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "go": "npm run build && preview && npm test",
-    "release": "np",
+    "release": "np --no-tests",
     "test": "vitest"
   },
   "dependencies": {

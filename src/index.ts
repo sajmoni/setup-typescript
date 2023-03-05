@@ -9,11 +9,16 @@ import { writePackage } from "write-pkg";
 import tsConfig from "./tsConfigTemplate.js";
 
 console.log();
-console.log(chalk.blue.bold(" add-typescript"));
+console.log(chalk.blue.bold(" setup-typescript"));
 console.log();
 
 try {
-  await execa("npm", ["install", "typescript", "tsconfig-one", "--save-dev"]);
+  await execa("npm", [
+    "install",
+    "typescript@5.1.0-dev.20230305",
+    "tsconfig-one@0.0.3",
+    "--save-dev",
+  ]);
 
   await writeFile("tsconfig.json", JSON.stringify(tsConfig));
 
@@ -38,5 +43,5 @@ try {
 
   console.log(` ${chalk.green("typescript and tsconfig.json added!")}`);
 } catch (error) {
-  console.log(chalk.red("add-typescript: Failed to add typescript"));
+  console.log(chalk.red("setup-typescript: Failed to setup typescript"));
 }
