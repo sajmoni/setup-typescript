@@ -40,7 +40,7 @@
     "prettier-config-one": "0.1.1",
     "tempy": "3.0.0",
     "tsconfig-one": "0.0.4",
-    "typescript": "5.1.0-dev.20230305",
+    "typescript": "5.0.1-rc",
     "vitest": "0.29.2"
   },
   "engines": {

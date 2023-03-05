@@ -15,12 +15,9 @@ console.log()
 try {
   await execa('npm', [
     'install',
-    'typescript@5.1.0-dev.20230305',
-    'tsconfig-one@0.0.3',
+    'typescript@5.0.1-rc',
+    'tsconfig-one@0.0.4',
     '--save-dev',
-    // TODO: Remove this once the issue is fixed
-    '--force',
-    '--legacy-peer-deps',
   ])
 
   await writeFile('tsconfig.json', JSON.stringify(tsConfig))
