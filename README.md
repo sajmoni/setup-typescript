@@ -1,4 +1,4 @@
-# add-typescript
+# setup-typescript
 
 > Adds `typescript` and `tsconfig-one` to a project
 

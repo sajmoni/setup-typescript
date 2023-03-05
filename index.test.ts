@@ -7,10 +7,10 @@ import { PackageJson, readPackage } from 'read-pkg'
 
 import tsConfig from './src/tsConfigTemplate'
 
-test('add-typescript', async () => {
+test('setup-typescript', async () => {
   const directory = temporaryDirectory({ prefix: 'hello-world' })
 
-  const { stdout } = await execa('add-typescript', [], {
+  const { stdout } = await execa('setup-typescript', [], {
     cwd: directory,
     env: {
       // @ts-expect-error

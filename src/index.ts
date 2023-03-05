@@ -18,6 +18,9 @@ try {
     'typescript@5.1.0-dev.20230305',
     'tsconfig-one@0.0.3',
     '--save-dev',
+    // TODO: Remove this once the issue is fixed
+    '--force',
+    '--legacy-peer-deps',
   ])
 
   await writeFile('tsconfig.json', JSON.stringify(tsConfig))

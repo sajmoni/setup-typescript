@@ -6,3 +6,10 @@ exports[`add-typescript 1`] = `
 
  [32mtypescript and tsconfig.json added![39m"
 `;
+
+exports[`setup-typescript 1`] = `
+"
+[34m[1m setup-typescript[22m[39m
+
+ [32mtypescript and tsconfig.json added![39m"
+`;
