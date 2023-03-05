@@ -1,9 +1,9 @@
 const tsConfig = {
-  extends: "tsconfig-one/tsconfig.json",
+  extends: 'tsconfig-one/tsconfig.json',
   compilerOptions: {
-    outDir: "dist",
+    outDir: 'dist',
   },
-  include: ["src"],
-};
+  include: ['src'],
+}
 
-export default tsConfig;
+export default tsConfig
