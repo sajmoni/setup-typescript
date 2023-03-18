@@ -1,12 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`add-typescript 1`] = `
-"
-[34m[1m add-typescript[22m[39m
-
- [32mtypescript and tsconfig.json added![39m"
-`;
-
 exports[`setup-typescript 1`] = `
 "
 [34m[1m setup-typescript[22m[39m

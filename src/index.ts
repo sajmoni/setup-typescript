@@ -15,7 +15,7 @@ console.log()
 try {
   await execa('npm', [
     'install',
-    'typescript@5.0.1-rc',
+    'typescript@5.0.2',
     'tsconfig-one@0.0.4',
     '--save-dev',
   ])
