@@ -1,6 +1,6 @@
 {
   "name": "setup-typescript",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> Adds `typescript` and `tsconfig-one` to a project",
   "keywords": [],
   "homepage": "https://github.com/sajmoni/setup-typescript#readme",
