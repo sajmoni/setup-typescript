@@ -27,7 +27,7 @@
   "prettier": "prettier-config-one",
   "dependencies": {
     "chalk": "5.2.0",
-    "execa": "7.0.0",
+    "execa": "7.1.1",
     "read-pkg": "7.1.0",
     "sort-package-json": "2.4.1",
     "write-pkg": "5.1.0"
@@ -40,8 +40,8 @@
     "prettier-config-one": "0.1.1",
     "tempy": "3.0.0",
     "tsconfig-one": "0.0.4",
-    "typescript": "5.0.1-rc",
-    "vitest": "0.29.2"
+    "typescript": "5.0.2",
+    "vitest": "0.29.3"
   },
   "engines": {
     "node": ">=18"
