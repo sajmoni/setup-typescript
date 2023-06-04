@@ -13,12 +13,7 @@ console.log(chalk.blue.bold(' setup-typescript'))
 console.log()
 
 try {
-  await execa('npm', [
-    'install',
-    'typescript@5.0.2',
-    'tsconfig-one@0.0.4',
-    '--save-dev',
-  ])
+  await execa('npm', ['install', 'typescript', 'tsconfig-one', '--save-dev'])
 
   await writeFile('tsconfig.json', JSON.stringify(tsConfig))
 
