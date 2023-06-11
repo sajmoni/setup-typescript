@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "release": "np --no-tests",
+    "release": "npm run build && np --no-tests",
     "test": "npm run build && chmod +x dist/index.js && vitest"
   },
   "prettier": "prettier-config-one",
