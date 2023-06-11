@@ -4,13 +4,18 @@ import { execa } from 'execa'
 import { temporaryDirectory } from 'tempy'
 import { loadJsonFile } from 'load-json-file'
 import { PackageJson, readPackage } from 'read-pkg'
+import { getBinPath } from 'get-bin-path'
 
 import tsConfig from './src/tsConfigTemplate'
 
 test('setup-typescript', async () => {
+  const binPath = await getBinPath()
+  if (!binPath) {
+    throw new Error('Bin path not found')
+  }
   const directory = temporaryDirectory({ prefix: 'hello-world' })
 
-  const { stdout } = await execa('setup-typescript', [], {
+  const { stdout } = await execa(binPath, [], {
     cwd: directory,
     env: {
       // @ts-expect-error

@@ -20,9 +20,8 @@
   ],
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "go": "npm run build && preview && npm test",
     "release": "np --no-tests",
-    "test": "vitest"
+    "test": "npm run build && chmod +x dist/index.js && vitest"
   },
   "prettier": "prettier-config-one",
   "dependencies": {
@@ -33,9 +32,9 @@
     "write-pkg": "5.1.0"
   },
   "devDependencies": {
+    "get-bin-path": "10.0.0",
     "load-json-file": "7.0.1",
     "np": "7.6.3",
-    "package-preview": "4.0.0",
     "prettier": "2.8.4",
     "prettier-config-one": "0.1.1",
     "tempy": "3.0.0",
