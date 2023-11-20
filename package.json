@@ -1,8 +1,12 @@
 {
   "name": "setup-typescript",
   "version": "0.0.2",
-  "description": "Adds `typescript` and `tsconfig-one` to a project",
-  "keywords": [],
+  "description": "Adds `typescript` and a `tsconfig` to a project",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "cli"
+  ],
   "homepage": "https://github.com/sajmoni/setup-typescript#readme",
   "bugs": {
     "url": "https://github.com/sajmoni/setup-typescript/issues"

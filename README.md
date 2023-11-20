@@ -1,6 +1,6 @@
 # setup-typescript
 
-> Adds `typescript` and `tsconfig-one` to a project
+> Adds `typescript` and a `tsconfig` to a project
 
 ## :sparkles: Features
 
@@ -10,6 +10,6 @@
 
 ## Usage
 
-```sh
+```console
 npx setup-typescript@latest
 ```
