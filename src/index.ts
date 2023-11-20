@@ -5,7 +5,7 @@ import { execa } from 'execa'
 import chalk from 'chalk'
 import { readPackage } from 'read-pkg'
 import sortPackageJson from 'sort-package-json'
-import { writePackage } from 'write-pkg'
+import { writePackage } from 'write-package'
 import tsConfig from './tsConfigTemplate.js'
 
 console.log()
