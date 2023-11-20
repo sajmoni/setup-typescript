@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { writeFile } from 'node:fs/promises'
+import writePrettyFile from 'write-pretty-file'
 import { execa } from 'execa'
 import chalk from 'chalk'
 import { readPackage } from 'read-pkg'
@@ -15,7 +15,7 @@ console.log()
 try {
   await execa('npm', ['install', 'typescript', 'tsconfig-one', '--save-dev'])
 
-  await writeFile('tsconfig.json', JSON.stringify(tsConfig))
+  await writePrettyFile('tsconfig.json', tsConfig)
 
   const packageJson = await readPackage({
     normalize: false,
