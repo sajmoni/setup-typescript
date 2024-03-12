@@ -39,4 +39,5 @@ try {
   console.log(` ${chalk.green('typescript and tsconfig.json added!')}`)
 } catch (error) {
   console.log(chalk.red('setup-typescript: Failed to setup typescript'))
+  throw error
 }
